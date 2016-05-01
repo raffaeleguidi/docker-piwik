@@ -1,4 +1,4 @@
-# Piwik
+# Piwik (stable 2.16.1)
 
 [![Build Status](https://travis-ci.org/piwik/docker-piwik.svg?branch=master)](https://travis-ci.org/piwik/docker-piwik)
 
