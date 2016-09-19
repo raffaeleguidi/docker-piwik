@@ -35,6 +35,7 @@ COPY php.ini /usr/local/etc/php/php.ini
 RUN curl -fsSL -o /usr/src/piwik/misc/GeoIPCity.dat.gz http://geolite.maxmind.com/download/geoip/database/GeoLiteCity.dat.gz \
  && gunzip /usr/src/piwik/misc/GeoIPCity.dat.gz
 
+COPY custom-php-fpm.conf /usr/local/etc/php-fpm.d/zz-docker.conf
 COPY docker-entrypoint.sh /entrypoint.sh
 
 # WORKDIR is /var/www/html (inherited via "FROM php")
